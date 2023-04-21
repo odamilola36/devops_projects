@@ -16,11 +16,13 @@ To spin up an instance on AWS, follow this [tutorial](https://medium.com/nerd-fo
 ##### Installing Apache2
 
 First update all package repositories on ubuntu by running
+`sudo apt update` 
 
-`sudo apt update` ![apt update ubuntu](./images/apt-update.png)
+![apt update ubuntu](./images/apt-update.png)
 
 Install apache web server by running:
 `sudo apt install apache2`
+
 ![apt update ubuntu](./images/install-apache.png)
 
 The web server can be accessed on the web browser by opening the public IP address on the address bar or by using the dns of the linux server provided by AWS. ![apt update ubuntu](./images/apache-default-page.png)
