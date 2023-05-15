@@ -29,6 +29,7 @@ The web server can be accessed on the web browser by opening the public IP addre
 ##### Installing MySQL
 
 To install MySQL, run the command `sudo apt install mysql-server`
+
 ![apt install mysql](./images/install-mysql.png)
 
 MySql comes with default security setings which inclued, but not exclusive to, a test database, default user permissions, global access, etc. It is advised that you reconfigure the security requirements to taste.
@@ -88,7 +89,8 @@ To Test php with nginx, create a simple php file as follows:
     sudo echo '<?php
         phpinfo();' > /var/www/project2/index.php
 ```
-load the url `public-ip/index.php` on the browser ![screenshot showing php default page](./images/install-php.png)
+load the url `public-ip/index.php` on the browser 
+![screenshot showing php default page](./images/php-default.png)
 
 ###### Retrieving data from mysql database
 Next, we create a new database, new user, and grant all permissions to the user on the database
@@ -113,6 +115,8 @@ Create table project2_db.todo_list (
 
 Insert into the database like this:
 `INSERT INTO example_database.todo_list (content) VALUES ("My first important item"); ` Do this a number of times to have multiple entries on the db table
+
+![screenshot showing php default page](./images/insertion.png)
 
 Create a php script that will connect to the database, read the database data and present the data in html on the browser
 
@@ -143,6 +147,7 @@ Save and Close.
 
 To see the script on the browser, enter `public-ip/todo_list.php`
 
+![screenshot showing php default page](./images/result-page.png)
 Thank you!
 
 ## 🔗 Reference:
