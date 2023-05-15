@@ -17,7 +17,8 @@ To spin up an instance on AWS, follow this [tutorial](https://medium.com/nerd-fo
 
 First update all package repositories on ubuntu by running
 
-`sudo apt update` ![apt update ubuntu](./images/apt-update.png)
+`sudo apt update` 
+![apt update ubuntu](./images/apt-update.png)
 
 Install apache web server by running:
 `sudo apt install nginx`
